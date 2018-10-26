@@ -1,0 +1,73 @@
+.pen {
+    @extend %fa-icon;
+    @extend .fas;
+    color: #fff;
+    transform: scale(1.5);
+    padding-left: 0.4rem;
+  
+    &:before {
+      content: fa-content($fa-var-pen-nib);
+    }
+    &--primary{
+      color: $color-primary-4;
+    }
+    &--secondary{
+      color: $color-secondary-1-0;
+    }
+}
+
+.stack{
+  @extend %fa-icon;
+  @extend .fab;
+  font-size: 3rem;
+  @include atMedium{
+    font-size: 4rem;
+  }
+  &::before{
+    content: fa-content($fa-var-stack-overflow)
+  }
+  &--primary{
+    color: $color-primary-3;
+  }
+  &--secondary{
+    color: $color-secondary-1-0;
+  }
+
+}
+
+.cogs{
+  @extend %fa-icon;
+  @extend .fas;
+  font-size: 3rem;
+  @include atMedium{
+    font-size: 4rem;
+  }
+  &::before{
+    content: fa-content($fa-var-cogs)
+  }
+  &--primary{
+    color: $color-primary-3;
+  }
+  &--secondary{
+    color: $color-secondary-1-0;
+  }
+}
+
+.laptop{
+  @extend %fa-icon;
+  @extend .fas;
+  font-size: 3rem;
+  @include atMedium{
+    font-size: 4rem;
+  }
+  &::before{
+    content: fa-content($fa-var-laptop-code)
+  }
+  &--primary{
+    color: $color-primary-3;
+  }
+  &--secondary{
+    color: $color-secondary-1-0;
+  }
+
+}

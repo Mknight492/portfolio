@@ -16,15 +16,20 @@
 //imported stylesheets (exc normalize)
 @import "imports/FAscss/fontawesome.scss";
 @import "imports/FAscss/solid.scss";
+@import "imports/FAscss/brands.scss";
 
 //resused modular styles
 
-@import "globalModules/wraper.scss";
+@import "globalModules/wrapper.scss";
+@import "globalModules/row.scss";
 @import "globalModules/pageSection";
+@import "globalModules/_nav";
+@import "globalModules/fa-icons";
+@import "globalModules/list";
+@import "globalModules/text-styles";
 
 //section specific styles
 @import "localModules/header.scss";
-
 @import "localModules/hero";
-
+@import "localModules/skills";
 //misc style

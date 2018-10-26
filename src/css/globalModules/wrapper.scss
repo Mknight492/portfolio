@@ -1,9 +1,14 @@
-.wraper{
+.wrapper{
     padding-left: 18px;
     padding-right: 18px;
     max-width: 1236px;
     margin-left: auto;
     margin-right: auto;
+
+    @include atMedium{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
 
     &--medium{
         max-width: 976px;
@@ -20,6 +25,15 @@
         @include atMedium{
             margin-bottom: 3.875rem
         }
+    }
+    &--small-on-phone{
+        padding-left: 9px;
+        padding-right: 9px;
+        @include atMedium{
+            padding-left: 18px;
+            padding-right: 18px;
+        }
+
     }
 
     .wraper{

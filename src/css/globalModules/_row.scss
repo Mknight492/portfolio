@@ -60,10 +60,7 @@
         @include atMedium{
             display:flex;
         }
-        & > div{
-            float: none;
-            display: flex;
-        }
+
     }
 
     &--t-padding{

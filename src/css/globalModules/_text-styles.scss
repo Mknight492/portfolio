@@ -1,0 +1,21 @@
+.section-header{
+    text-align: center;
+    text-transform: uppercase;
+    padding:0;
+    margin:0;
+    font-size: 1.8rem;
+    @include atMedium{
+        font-size: 2.4rem;
+        padding: 0 0 1.5rem 0;
+    }
+
+    &:after{
+        display: block;
+        height: 2px;
+        background-color: $color-secondary-1-0;
+        content: " ";
+        width: 150px;
+        margin: 0 auto;
+        margin-top: 20px;
+     }
+}
