@@ -1,0 +1,22 @@
+.btn{
+    background-color: $color-primary-0;
+    color: #FFF;
+    padding: 0.7rem 1.2rem;
+    display: inline-block;
+    text-decoration: none;
+    
+
+    &--large{
+        padding: 1.1rem 2rem;
+
+        @include atSmall {
+            font-size: 1.0rem;
+        }
+        @include atMedium{
+            font-size: 1.1rem;
+        }
+        @include atLarge{
+            font-size:  1.25rem;
+        }
+    }
+}

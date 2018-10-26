@@ -1,0 +1,29 @@
+.wraper{
+    padding-left: 18px;
+    padding-right: 18px;
+    max-width: 1236px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &--medium{
+        max-width: 976px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    &--b-margin{
+        margin-bottom: 1rem;
+
+        @include atSmall{
+            margin-bottom: 2rem;
+        }
+        @include atMedium{
+            margin-bottom: 3.875rem
+        }
+    }
+
+    .wraper{
+        padding-left:0;
+        padding-right:0;
+    }
+}

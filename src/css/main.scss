@@ -1,0 +1,30 @@
+// normalise
+@import "imports/_normalize.scss";
+
+//global variables
+@import "globalModules/variables.scss";
+@import "globalModules/colorVariables";
+
+
+//global mixins
+@import "globalModules/mixins.scss";
+
+//global styles
+@import "globalModules/_global.scss";
+@import "globalModules/_btn.scss";
+
+//imported stylesheets (exc normalize)
+@import "imports/FAscss/fontawesome.scss";
+@import "imports/FAscss/solid.scss";
+
+//resused modular styles
+
+@import "globalModules/wraper.scss";
+@import "globalModules/pageSection";
+
+//section specific styles
+@import "localModules/header.scss";
+
+@import "localModules/hero";
+
+//misc style

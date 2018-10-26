@@ -1,0 +1,11 @@
+.large-hero{
+    background: linear-gradient(to bottom, #bbb, #000);
+
+    
+    &__background-img{
+        color: blue;
+        opacity: 0.7;
+        display: block;
+        line-height: 0;
+    }
+}
