@@ -1,0 +1,48 @@
+.projects{
+
+    position: relative;
+    &__img{
+        //background-color: #293347;
+        background: linear-gradient(35deg,#CCFFFF, #FFCCCC);
+        position: relative;
+        border-radius: 2rem;      
+        overflow: hidden;
+        &:hover{
+            img{
+                opacity: 0.1;
+            }
+            .overlay{
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+        img{
+            border-radius: 2rem;
+            display: block;
+            opacity: 0.7;
+            transition: all 0.5s ease-in-out;
+            &:hover{
+                opacity: 0.1;
+            }
+
+        }
+    }
+    &__text{
+
+    }
+  
+}
+
+.overlay{
+    display: block;
+    position: absolute;
+    
+    top:33%;
+    left:33%;
+    
+    transform: translate( -33%, -33%);
+    opacity: 0;
+    transform: scale(1.5);
+    transition: all 0.5s ease-in-out;
+}

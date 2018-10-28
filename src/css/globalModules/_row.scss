@@ -2,9 +2,6 @@
     
     &__medium-4{
         
-        *{
-            width: 100%;
-        }
         @include atMedium{
             float: left;
             width: 33.33%;
