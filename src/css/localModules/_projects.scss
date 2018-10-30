@@ -1,12 +1,13 @@
 .projects{
+    
 
-    position: relative;
     &__img{
         //background-color: #293347;
         background: linear-gradient(35deg,#CCFFFF, #FFCCCC);
         position: relative;
         border-radius: 2rem;      
         overflow: hidden;
+        
         &:hover{
             img{
                 opacity: 0.1;
@@ -28,8 +29,14 @@
 
         }
     }
+    &__div{
+        padding-top: 2rem;
+    }
     &__text{
-
+        font-size:1.4rem;
+    }
+    &__paragraph{
+        padding-bottom: 0.8rem;
     }
   
 }
@@ -37,12 +44,16 @@
 .overlay{
     display: block;
     position: absolute;
-    
-    top:33%;
-    left:33%;
-    
+    top:15%;
+    left:5%; 
     transform: translate( -33%, -33%);
+    text-align: center;
+    width: 90%;
     opacity: 0;
     transform: scale(1.5);
     transition: all 0.5s ease-in-out;
+
+    @include atLarge{
+        top: 10%;
+    }
 }

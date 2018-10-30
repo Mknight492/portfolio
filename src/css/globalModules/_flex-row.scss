@@ -1,0 +1,27 @@
+.flex-row{
+    display: flex;
+    
+    flex-wrap: wrap;
+
+}
+
+.flex-col{
+    &--padding-1rem{
+        padding: 1.64rem 1rem;
+    }
+
+    &--3p-2t-1l{    
+        width: 100%;
+        max-width: 450px;
+        margin-left:auto;
+        margin-right: auto;
+
+        @include atMedium{
+            width: 50%;
+        }
+        @include atLarge{
+            width: 33%;
+        }
+    }
+
+}
