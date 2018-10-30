@@ -24,6 +24,14 @@
         background-color: $color-primary-3;
     }
 
+    &--small{
+        font-size: 1rem;
+        padding:0.5rem 1rem;
+    }
+    &--center{
+        text-align: center;
+    }
+
     &--large{
         padding: 1.1rem 2rem;
 

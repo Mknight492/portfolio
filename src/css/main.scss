@@ -27,9 +27,11 @@
 @import "globalModules/fa-icons";
 @import "globalModules/list";
 @import "globalModules/text-styles";
+@import "globalModules/flex-row";
 
 //section specific styles
 @import "localModules/header.scss";
 @import "localModules/hero";
 @import "localModules/skills";
+@import "localModules/projects";
 //misc style
