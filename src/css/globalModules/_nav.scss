@@ -2,6 +2,7 @@
     
     float:right;
     display:none;
+    
     @include atMedium{
         display: inline-block;
     }
@@ -26,12 +27,10 @@
         }
         &:hover{
             color: $color-secondary-1-0;
-            border-color: $color-secondary-1-0;
+            
         }
-
-
     }
-    &--border-bottom{
+    .active{
         border-bottom: 3px solid #fff;
     }
 

@@ -1,3 +1,3 @@
-export function testFunction(){
-    console.log('test sucssess')
+export function testFunction () {
+  console.log('test sucssess')
 }
