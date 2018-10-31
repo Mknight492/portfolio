@@ -1,0 +1,61 @@
+.contact{
+    position: static;
+    text-align: left;
+    color: $color-primary-d;
+    input, textarea, select{
+        background-color: rgba(105, 133, 150, 0.9);
+        *{
+            
+        }
+        
+    }
+
+    @include atMedium{
+        text-align: right;
+    }
+    &__box{
+        width: 100%;
+        height: 60vh;
+        position: relative;
+        @include atMedium{
+            min-height: 600px;
+        }
+    }
+    &__map{
+      height: 100%;
+    }
+    &__form{
+        background-color:rgba(148, 193, 221, 0.897);
+        border: 2px solid $color-primary-d;
+        border-radius: 2rem;
+        position: relative;
+        width: 80%;
+        margin: 2rem auto; 
+        opacity: 0.8;
+        padding: 2rem 2rem 2rem 1rem;
+
+        @include atMedium{
+            background-color: rgb(245, 245, 245);
+            border-radius: 0;
+            width: 100%;
+            position: absolute;
+            margin: 0 auto;
+            top:0;
+            left:30%;
+            width: 70%;
+            height: 100%;
+        }
+
+
+    }
+    &__label{
+        
+        font-size: 1.4rem;
+        margin-right: 1rem; 
+    }
+    &__input{
+        font-size: 1.4rem;
+        width:100%;
+    }
+}
+

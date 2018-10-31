@@ -6,6 +6,8 @@
   <meta name="keywords" content="Travel planning, travel bundles, travel escapes affordable travel">
   <meta name="description" content="Your clarity. One trip away. We create soul restoring journeys that inspire you to be you.">
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+
+  <script type="text/javascript" src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/markerwithlabel/src/markerwithlabel.js"></script>
 </head>
 <body>
 
@@ -111,7 +113,7 @@
     <div class="flex-row">
        
 
-      <div class="flex-col--3p-2t-1l flex-col--padding-1rem">
+      <div class="flex-col--100p-50t-33l flex-col--padding-1rem">
         <div class="projects__img">
           <figure>
             <img src ="images/project1.jpg" alt = "a project">
@@ -124,7 +126,7 @@
         </div>
       </div>
 
-      <div class="flex-col--3p-2t-1l flex-col--padding-1rem">
+      <div class="flex-col--100p-50t-33l flex-col--padding-1rem">
           <div class="projects__img">
               <figure>
                   <img src ="images/project1.jpg" alt = "a project">
@@ -136,7 +138,7 @@
             </div>
       </div>
 
-      <div class="flex-col--3p-2t-1l flex-col--padding-1rem">
+      <div class="flex-col--100p-50t-33l flex-col--padding-1rem">
         <div class="projects__img">
               <figure>
                   <img src ="images/project1.jpg" alt = "a project">
@@ -148,7 +150,7 @@
         </div>
       </div>
       
-      <div class="flex-col--3p-2t-1l flex-col--padding-1rem">
+      <div class="flex-col--100p-50t-33l flex-col--padding-1rem">
         <div class="projects__img">
           <figure>
               <img src ="images/project1.jpg" alt = "a project">
@@ -160,7 +162,7 @@
         </div>
       </div>
 
-      <div class="flex-col--3p-2t-1l flex-col--padding-1rem">
+      <div class="flex-col--100p-50t-33l flex-col--padding-1rem">
         <div class="projects__img">
           <figure>
               <img src ="images/project1.jpg" alt = "a project">
@@ -172,7 +174,7 @@
         </div>
       </div>
 
-      <div class="flex-col--3p-2t-1l flex-col--padding-1rem">
+      <div class="flex-col--100p-50t-33l flex-col--padding-1rem">
         <div class="projects__img">
           <figure>
               <img src ="images/project1.jpg" alt = "a project">
@@ -188,11 +190,85 @@
   </div>
 </div>
 
+<section class="page-section contact">
+  
+  
+  <div class="contact__box">
+
+    <div id="map" class="contact__map"></div>
+   
+    <section class="contact__form">
+        <div class="row">
+
+            <h2 class="section-header"> Get In Touch </h2>
+            <form method="POST" action="#" class="contact-form">
+                <div class="flex-row flex-row--padding-top flex-row--align-center">
+                    <div class="flex-col--33p-33t-33l flex-col--align-right">
+                        <label class="contact__label" for="name">name:</label>
+                    </div>
+                    <div class="flex-col--66p-66t-66l flex-col--align-right">
+                        <input class="contact__input" type="text" name="name" id="name" placeholder="your name" required>
+                    </div>
+                </div>
+                <div class="flex-row flex-row--padding-top flex-row--align-center">
+                    <div class="flex-col--33p-33t-33l flex-col--align-right">
+                        <label class="contact__label" for="email">email:</label>
+                    </div>
+                    <div class="flex-col--66p-66t-66l">
+                        <input class="contact__input" type="email" name="email" id="email" placeholder="your email" required>
+                    </div>
+                </div>
+                <div class="flex-row flex-row--padding-top flex-row--align-center">
+                    <div class="flex-col--33p-33t-33l flex-col--align-right">
+                        <label class="contact__label">How did you find us?</label>
+                    </div>
+                    <div class="flex-col--66p-66t-66l">
+                        <select class="contact__input" name="find-us" id="find-us">
+                            <option value="friends" selected>Friends </option>
+                            <option value="google"> google </option>
+                            <option value="adds"> Adds </option>
+                            <option value="other"> Other </option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="flex-row flex-row--padding-top flex-row--align-center">
+                    <div class="flex-col--33p-33t-33l flex-col--align-right">
+                        <label class="contact__label">Drop us a line:</label>
+                    </div>
+                    <div class="flex-col--66p-66t-66l">
+                        <textarea class="contact__input" name="message" id="mesaage" placeholder="your message" cols="30" rows="4"></textarea>
+                    </div>
+                </div>
+                <div class="flex-row flex-row--padding-top flex-row--align-center">
+                    <div class="flex-col--33p-33t-33l flex-col--align-right">
+                        
+                    </div>
+                    <div class="flex-col--66p-66t-66l flex-col--align-left" >
+                        <input class="contact_input btn btn--small" type="submit" value="send it">                       
+                        <label class="contact__label" for="email">Newsletter:</label>
+                        <input class="contact__checkbox" type="checkbox" name="checkbox" id="checkbox" checked>
+                    </div>
+                </div>
+                <div class="flex-row flex-row--padding-top flex-row--align-center">
+                    <div class="flex-col--33p-33t-33l flex-col--align-right">
+                        <label>&nbsp;</label>
+                    </div>
+                    <div class="flex-col--66p-66t-66l">
+                        
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+  </div>
+
+</section>
 
 
 
 
-  <footer class="site-footer">
     
   <!--
   <div class="modal">
@@ -203,9 +279,9 @@
   </div>
 
   -->
-
-
-
-
+  
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSOw1Yu3D1WzfLZItDcBP0KPpPlx23l_k"></script>
 </body>
+
+
 </html>
