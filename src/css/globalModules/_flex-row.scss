@@ -1,16 +1,24 @@
 .flex-row{
-    display: flex;
-    
-    flex-wrap: wrap;
+    display: flex; 
 
 }
+.flex-row{
+    flex-wrap: wrap;
+    &--padding-top{
+        padding-top:10px;
+    }
+    &--align-center{
+        align-items: center;
+    }
+}
+
 
 .flex-col{
     &--padding-1rem{
         padding: 1.64rem 1rem;
     }
 
-    &--3p-2t-1l{    
+    &--100p-50t-33l{    
         width: 100%;
         max-width: 450px;
         margin-left:auto;
@@ -23,5 +31,26 @@
             width: 33%;
         }
     }
+
+    &--33p-33t-33l{
+        width: 100%;
+        @include atMedium{
+            width:33%;
+        }
+        
+    }
+
+    &--66p-66t-66l{
+        width: 100%;
+        
+        @include atMedium{
+            width: 66%;
+        }
+    }
+
+    &--align-left{
+        text-align:left; 
+    }
+    
 
 }
