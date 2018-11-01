@@ -1,45 +1,19 @@
-.nav{
+nav{
     
-    float:right;
-    display:none;
-    @include atMedium{
-        display: inline-block;
-    }
-
-    ul{
-        float:right;
-        @include clearfix;    
-    }
-
     li{
         list-style: none;
-        display: inline-block;
     }
 
     a{
         color: #fff;
         text-decoration: none;
         text-align: center;
-        padding:0 10px;
         @include atMedium{
             padding: 13px 20px;
         }
         &:hover{
             color: $color-secondary-1-0;
-            border-color: $color-secondary-1-0;
-        }
-
-
-    }
-    &--border-bottom{
-        border-bottom: 3px solid #fff;
-    }
-
-    &--float-right{
-        @include atMedium{
-            float: right;
+            
         }
     }
-
-    
 }

@@ -71,3 +71,41 @@
   }
 
 }
+
+.bars{
+  @extend %fa-icon;
+  @extend .fas;
+  font-size: 2rem;
+  color: #fff;
+  @include atMedium{
+    font-size: 3rem;
+  }
+  &::before{
+    content: fa-content($fa-var-bars)
+  }
+  &--primary{
+    color: $color-primary-3;
+  }
+  &--secondary{
+    color: $color-secondary-1-0;
+  }
+}
+
+.cross{
+  @extend %fa-icon;
+  @extend .fas;
+  font-size: 2rem;
+  color: #fff;
+  @include atMedium{
+    font-size: 3rem;
+  }
+  &::before{
+    content: fa-content($fa-var-times)
+  }
+  &--primary{
+    color: $color-primary-3;
+  }
+  &--secondary{
+    color: $color-secondary-1-0;
+  }
+}
