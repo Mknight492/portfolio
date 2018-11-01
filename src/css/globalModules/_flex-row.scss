@@ -1,6 +1,6 @@
 .flex-row{
     display: flex; 
-
+    align-self: center;
 }
 .flex-row{
     flex-wrap: wrap;
@@ -10,6 +10,7 @@
     &--align-center{
         align-items: center;
     }
+   
 }
 
 
