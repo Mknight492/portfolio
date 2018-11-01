@@ -109,3 +109,61 @@
     color: $color-secondary-1-0;
   }
 }
+.knight{
+  @extend %fa-icon;
+  @extend .fas;
+  font-size: 2rem;
+  color: #fff;
+  @include atMedium{
+    font-size: 3rem;
+  }
+  &::before{
+    content: fa-content($fa-var-chess-knight)
+  }
+  &--primary{
+    color: $color-primary-3;
+  }
+  &--secondary{
+    color: $color-secondary-1-0;
+  }
+}
+
+.cheveron-left{
+  @extend %fa-icon;
+  @extend .fas;
+  font-size: 1.5rem;
+  color: #fff;
+  padding-right:3px;
+  @include atMedium{
+    font-size: 3rem;
+  }
+  &::before{
+    content: fa-content($fa-var-chevron-left)
+  }
+  &--primary{
+    color: $color-primary-3;
+  }
+  &--secondary{
+    color: $color-secondary-1-0;
+  }
+}
+
+.cheveron-right{
+  @extend %fa-icon;
+  @extend .fas;
+  font-size: 1.5rem;
+  color: #fff;
+  padding-left: 2px;
+  @include atMedium{
+    font-size: 3rem;
+  }
+  &::before{
+    content: fa-content($fa-var-chevron-right)
+  }
+  &--primary{
+    color: $color-primary-3;
+  }
+  &--secondary{
+    color: $color-secondary-1-0;
+  }
+}

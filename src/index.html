@@ -11,11 +11,11 @@
 </head>
 <body>
 
-  <header class="header">
+  <header class="header" >
 
     <nav class="header__nav"> 
       <div class="header__nav__logo">
-        <p>Knight Designs</p>
+        <p> <span class="text140">K</span>night &nbsp; <span class="text140">D</span>esigns <i class="header__icon cheveron-left"></i><i class="knight"></i><i class="cheveron-right"></i></p>
       </div>
       <ul class="header__nav__ul"> 
         <li><a class="active" href="#home">Home</a></li>
@@ -31,7 +31,7 @@
 
   </header>
 
-  <div class="large-hero">
+  <div class="large-hero" id='home'>
     <picture  class="large-hero__background-img">
       <img src = "images/hero--large.jpg" alt="Laptop and designer">
     </picture>
@@ -191,77 +191,66 @@
   </div>
 </div>
 
-<section class="page-section contact">
+<section class="contact" id="contact">
   
   
   <div class="contact__box">
 
     <div id="map" class="contact__map"></div>
-   
-    <section class="contact__form">
+    <section class="contact__background">
+      <div class="contact__form">
         <div class="row">
+          <h2 class="section-header"> Get In Touch </h2>
+              <form method="POST" action="#" class="contact-form">
+                  <div class="flex-row flex-row--padding-top flex-row--align-center">
+                      <div class="flex-col--33p-33t-33l flex-col--align-right">
+                          <label class="contact__label" for="name">NAME</label>
+                      </div>
+                      <div class="flex-col--66p-66t-66l flex-col--align-right">
+                          <input class="contact__input" type="text" name="name" id="name" placeholder="" required>
+                      </div>
+                  </div>
+                  <div class="flex-row flex-row--padding-top flex-row--align-center">
+                      <div class="flex-col--33p-33t-33l flex-col--align-right">
+                          <label class="contact__label" for="email">EMAIL</label>
+                      </div>
+                      <div class="flex-col--66p-66t-66l">
+                          <input class="contact__input" type="email" name="email" id="email" placeholder="" required>
+                      </div>
+                  </div>
 
-            <h2 class="section-header"> Get In Touch </h2>
-            <form method="POST" action="#" class="contact-form">
-                <div class="flex-row flex-row--padding-top flex-row--align-center">
-                    <div class="flex-col--33p-33t-33l flex-col--align-right">
-                        <label class="contact__label" for="name">name:</label>
-                    </div>
-                    <div class="flex-col--66p-66t-66l flex-col--align-right">
-                        <input class="contact__input" type="text" name="name" id="name" placeholder="your name" required>
-                    </div>
-                </div>
-                <div class="flex-row flex-row--padding-top flex-row--align-center">
-                    <div class="flex-col--33p-33t-33l flex-col--align-right">
-                        <label class="contact__label" for="email">email:</label>
-                    </div>
-                    <div class="flex-col--66p-66t-66l">
-                        <input class="contact__input" type="email" name="email" id="email" placeholder="your email" required>
-                    </div>
-                </div>
-                <div class="flex-row flex-row--padding-top flex-row--align-center">
-                    <div class="flex-col--33p-33t-33l flex-col--align-right">
-                        <label class="contact__label">How did you find us?</label>
-                    </div>
-                    <div class="flex-col--66p-66t-66l">
-                        <select class="contact__input" name="find-us" id="find-us">
-                            <option value="friends" selected>Friends </option>
-                            <option value="google"> google </option>
-                            <option value="adds"> Adds </option>
-                            <option value="other"> Other </option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="flex-row flex-row--padding-top flex-row--align-center">
-                    <div class="flex-col--33p-33t-33l flex-col--align-right">
-                        <label class="contact__label">Drop us a line:</label>
-                    </div>
-                    <div class="flex-col--66p-66t-66l">
-                        <textarea class="contact__input" name="message" id="mesaage" placeholder="your message" cols="30" rows="4"></textarea>
-                    </div>
-                </div>
-                <div class="flex-row flex-row--padding-top flex-row--align-center">
-                    <div class="flex-col--33p-33t-33l flex-col--align-right">
-                        
-                    </div>
-                    <div class="flex-col--66p-66t-66l flex-col--align-left" >
-                        <input class="contact_input btn btn--small" type="submit" value="send it">                       
-                        <label class="contact__label" for="email">Newsletter:</label>
-                        <input class="contact__checkbox" type="checkbox" name="checkbox" id="checkbox" checked>
-                    </div>
-                </div>
-                <div class="flex-row flex-row--padding-top flex-row--align-center">
-                    <div class="flex-col--33p-33t-33l flex-col--align-right">
-                        <label>&nbsp;</label>
-                    </div>
-                    <div class="flex-col--66p-66t-66l">
-                        
-                    </div>
-                </div>
-            </form>
+                  <div class="flex-row flex-row--padding-top flex-row--align-center">
+                      <div class="flex-col--33p-33t-33l flex-col--align-right">
+                          <label class="contact__label">MESSAGE</label>
+                      </div>
+                      <div class="flex-col--66p-66t-66l">
+                          <textarea class="contact__input" name="message" id="mesaage" placeholder="" cols="30" rows="2"></textarea>
+                      </div>
+                  </div>
+                  <div class="flex-row flex-row--padding-top flex-row--align-center">
+                      <div class="flex-col--33p-33t-33l flex-col--align-right">
+                          
+                      </div>
+                      <div class="flex-col--66p-66t-66l flex-col--align-center" >                                          
+                        <label class="contact__newsletter" for="checkbox">Newsletter:
+                          <input class="contact__checkbox--remove" type="checkbox" name="checkbox" id="checkbox" checked="checked">
+                          <span class="contact__checkbox"></span>
+                        </label>
+                        <input class="contact__btn contact__btn--disabled btn btn--small" type="submit" value="send it">   
+                      </div>
+                  </div>
+                  <div class="flex-row flex-row--padding-top flex-row--align-center">
+                      <div class="flex-col--33p-33t-33l flex-col--align-right">
+                          <label>&nbsp;</label>
+                      </div>
+                      <div class="flex-col--66p-66t-66l">
+                          
+                      </div>
+                  </div>
+              </form>
+          </div>
         </div>
-    </section>
+  </section>
 
   </div>
 

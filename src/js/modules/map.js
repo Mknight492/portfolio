@@ -4,8 +4,9 @@
 // if it large than the resize parameter is will focus the center to the right of the map
 // allowing the contact form to sit in front
 function Map (resize = 740) {
-  
-  let oldWidth = 0
+
+  // variable to keep track of prev screen size
+  let oldWidth = -1
   this.initMap = () => {
     let mapCenter = {}
 
@@ -36,15 +37,13 @@ function Map (resize = 740) {
     })
   }
 
-  (this.events = () => {
+  (this.events = () => { 
     const here = this
     document.addEventListener('DOMContentLoaded', this.initMap)
     window.addEventListener('resize', function resizeMap (e) {
-      
       let newWidth = e.target.innerWidth
-      console.log(newWidth)
-      console.log(oldWidth)
-      if ((newWidth >= resize && oldWidth < resize) || (newWidth <= resize && oldWidth >= resize )) {
+
+      if ((newWidth >= resize && oldWidth < resize) || (newWidth <= resize && oldWidth >= resize)) {
         here.initMap()
         oldWidth = newWidth
       }

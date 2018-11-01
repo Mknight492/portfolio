@@ -5,16 +5,17 @@
     width: 100%;
     color: #fff;
     z-index: 3;
-    
+
 
     &__nav{
         display: grid;
-        grid-auto-columns: 2fr 3fr;
+        grid-auto-columns: 4fr 2fr;
         max-width: 1720px;
         margin: 0 auto;
         padding: 0.5rem 0;
         @include atMedium{
             padding: 0.8rem 0;
+            grid-auto-columns: 2fr 3fr;
         }
         
 
@@ -22,10 +23,13 @@
             grid-column: 1;
             justify-self: center;
             align-self: center;
-            font-size: 1.2rem;
+            font-size: 1rem;
             text-transform: uppercase;
+            @include atSmall{
+                font-size: 1.2rem;
+            }
             @include atMedium{
-                font-size: 1.5rem;
+                font-size: 1.4rem;
             }
         }
         &__ul{
