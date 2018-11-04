@@ -1,6 +1,5 @@
 .flex-row{
     display: flex; 
-    align-self: center;
 }
 .flex-row{
     flex-wrap: wrap;
@@ -56,6 +55,10 @@
 
     &--align-center{
         text-align: center;
+    }
+
+    &--max600{
+        max-width: 600px;
     }
 
 }

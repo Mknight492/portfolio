@@ -30,12 +30,26 @@ function Map (resize = 740) {
       zoom: 14
     })
 
-    let marker = new google.maps.Marker({
+    let marker1 = new google.maps.Marker({
       position: logoLocation,
-      map: map
-
-    })
+      map: map,
+      label: {
+        fontFamily: "'Font Awesome 5 Free'",
+        fontSize: '3rem',
+        fontWeight: '900',
+        text: '\uf053\uf441\uf054',
+        color: 'rgb(70, 126, 168)'
+      },
+      icon: {
+        path: google.maps.SymbolPath.CIRCLE, //or any others
+        scale: 0.1
+      },
+      
+    });
   }
+
+
+
 
   (this.events = () => { 
     const here = this
