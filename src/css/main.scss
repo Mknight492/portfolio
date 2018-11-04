@@ -1,39 +1,59 @@
-// normalise
-@import "imports/_normalize.scss";
+//import utils
 
-//global variables
-@import "globalModules/variables.scss";
-@import "globalModules/colorVariables";
+@import "utils/size-variables";
+@import "utils/colorVariables";
+@import "utils/mixins";
+@import "utils/wrapper";
+@import "utils/helpers";
+
+//vendor stylesheets (exc normalize)
+
+@import "vendors/FAscss/fontawesome";
+@import "vendors/FAscss/solid";
+@import "vendors/FAscss/brands";
+
+// base
+
+@import "base/normalize";
+@import "base/typography";
+@import "base/global";
 
 
-//global mixins
-@import "globalModules/mixins.scss";
+//layout
+@import "layout/row";
+@import "layout/grid";
+@import "layout/pageSection";
+@import "layout/nav";
+@import "layout/flex-row";
 
-//global styles
-@import "globalModules/_global.scss";
-@import "globalModules/_btn.scss";
 
-//imported stylesheets (exc normalize)
-@import "imports/FAscss/fontawesome.scss";
-@import "imports/FAscss/solid.scss";
-@import "imports/FAscss/brands.scss";
+//components
+@import "components/btn";
+@import "components/fa-icons";
+@import "components/list";
+@import "components/contact";
+@import "components/projects";
+@import "components/skills";
+@import "components/hero";
+@import "components/header";
 
-//resused modular styles
 
-@import "globalModules/wrapper.scss";
-@import "globalModules/row.scss";
-@import "globalModules/grid.scss";
-@import "globalModules/pageSection";
-@import "globalModules/_nav";
-@import "globalModules/fa-icons";
-@import "globalModules/list";
-@import "globalModules/text-styles";
-@import "globalModules/flex-row";
+//pages
+
+
+
+//themes
+
+
+//misc
+
+
+
+
+
+
+
 
 //section specific styles
-@import "localModules/header.scss";
-@import "localModules/hero";
-@import "localModules/skills";
-@import "localModules/projects";
-@import "localModules/contact";
+
 //misc style

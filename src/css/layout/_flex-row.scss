@@ -18,7 +18,7 @@
         padding: 1.64rem 1rem;
     }
 
-    &--100p-50t-33l{    
+    &--100s-50m-33l{    
         width: 100%;
         max-width: 450px;
         margin-left:auto;
@@ -32,7 +32,7 @@
         }
     }
 
-    &--33p-33t-33l{
+    &--100s-33m-33l{
         width: 100%;
         @include atMedium{
             width:33%;
@@ -40,7 +40,7 @@
         
     }
 
-    &--66p-66t-66l{
+    &--100s-66m-66l{
         width: 100%;
         
         @include atMedium{
