@@ -1,8 +1,10 @@
 .flex-row{
     display: flex; 
+
 }
 .flex-row{
     flex-wrap: wrap;
+    
     &--padding-top{
         padding-top:10px;
     }
@@ -14,6 +16,8 @@
 
 
 .flex-col{
+
+    
     &--padding-1rem{
         padding: 1.64rem 1rem;
     }

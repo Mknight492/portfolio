@@ -1,5 +1,5 @@
 .large-hero{
-    background: linear-gradient(to bottom, rgb(83, 83, 83), #000);
+    background-image: linear-gradient(to bottom, rgb(83, 83, 83), #000);
     position: relative;
     color: #fff;
     h1{
@@ -12,6 +12,10 @@
         opacity: 0.4;
         display: block;
         line-height: 0;
+        background-image:url(../assets/images/hero--large.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
         img{
             height: auto;
             width: 100%;
