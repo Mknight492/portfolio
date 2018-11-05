@@ -16,4 +16,17 @@
         padding-top: 2rem;
     }
 
+    &--small{
+        padding: 0.8rem 0;
+        @include atSmall {
+            padding: 1rem 0;
+        }
+        @include atMedium{
+            padding: 2rem 0;
+        }
+        @include atLarge{
+            padding: 2.5rem 0;
+        }
+    }
+
 }

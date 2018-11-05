@@ -23,6 +23,7 @@ module.exports = () => (module.exports = {
                 require('postcss-simple-vars')(),
                 require('postcss-import')(),
                 require('postcss-hexrgba'),
+                require('postcss-selector-not')
               ],
             } 
           }        ,

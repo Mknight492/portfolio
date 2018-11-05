@@ -1,3 +1,5 @@
+//global mixins
+// NB some mixins have been left inside local files if they are only used in that file
 @mixin atSmall{
     @media(min-width: 530px){
         @content;
@@ -21,5 +23,12 @@
         content: "";
         clear:both;
         display: table;
+    }
+}
+
+@mixin hoverOpacity ($opacity){
+    transition: opacity 0.3s ease-in-out;
+    &:hover{
+        opacity: #{$opacity};
     }
 }

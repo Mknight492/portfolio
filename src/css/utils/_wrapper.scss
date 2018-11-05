@@ -16,6 +16,11 @@
         margin-right: auto;
 
     }
+    &--narrow{
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
     &--b-margin{
         margin-bottom: 1rem;
 

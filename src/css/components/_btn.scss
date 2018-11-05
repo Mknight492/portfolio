@@ -52,4 +52,11 @@
             margin: 1rem 1rem;
         }
     }
+    &--disabled{
+        background-color: #555555;
+        &:hover{
+            background-color: #555555;
+            cursor: not-allowed;
+        }
+    }
 }

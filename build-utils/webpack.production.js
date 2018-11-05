@@ -29,7 +29,8 @@ module.exports = () => (module.exports = {
                 }
               }),
               require('postcss-simple-vars')(),
-              require('postcss-hexrgba')
+              require('postcss-hexrgba'),
+              require('postcss-selector-not')
             ]
           }
         },

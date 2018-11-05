@@ -1,0 +1,43 @@
+.footer{
+    
+    background-color: $color-primary-0;
+    text-align: center;
+    color:#e3e3e3;
+    
+    @mixin footerHover {
+        opacity: 0.7;
+        transition: opacity 0.5s ease-in-out;
+        &:hover{
+            opacity: 1;
+        }
+    }
+    &__icons{
+        @include footerHover();
+    }
+    &__icon{
+        color: inherit;
+
+
+    }
+    &__motto{
+        font-size: 1rem;
+        padding: 1.5rem 0;
+        width: 80%;
+        margin: 0 auto;
+        @include footerHover();
+        &:hover{
+            opacity: 1;
+        }
+        @include atMedium{
+            font-size: 1.5rem;
+        }
+    }
+    &__links{
+        display: flex;
+        justify-content: space-around;
+        a{
+            color:inherit;
+            @include footerHover();
+        }
+    }
+}

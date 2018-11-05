@@ -6,35 +6,41 @@
   <meta name="keywords" content="Travel planning, travel bundles, travel escapes affordable travel">
   <meta name="description" content="Your clarity. One trip away. We create soul restoring journeys that inspire you to be you.">
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+  
+  <script type="text/javascript" src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/markerwithlabel/src/markerwithlabel.js"></script>
 <link href="main.css" rel="stylesheet"></head>
 <body>
 
-  <header class="site-header">
-    <div class="wrapper">
-      <div class="site-header__menu-content">
+  <header class="header" >
 
-        <div class="site-header__logo">
-          <p class="site-header__logo__text">Knight Designs &nbsp;<span class="pen"></span></p>
-        </div>
-        <nav class="nav nav--primary nav--float-right">
-          <ul>
-            <li><a class="nav--border-bottom" href="#">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
+    <nav class="header__nav"> 
+      <div class="header__nav__logo">
+        <p> <span class="text140">K</span>night &nbsp; <span class="text140">D</span>esigns <i class="header__icon cheveron-left"></i><i class="knight"></i><i class="cheveron-right"></i></p>
       </div>
-    </div>
+      <ul class="header__nav__ul"> 
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="header__nav__icon-div">
+          <i class="header__nav__icon bars"></i>
+          <i class="header__nav__icon header__nav__icon--hidden cross"></i>
+        </div>
+    </nav>
+
   </header>
 
-  <div class="large-hero">
+  <div class="large-hero" id='home'>
     <picture  class="large-hero__background-img">
       <img src = "images/hero--large.jpg" alt="Laptop and designer">
     </picture>
     <div class="wrapper">
       <div class="large-hero__text-content">
-          <h1 class="large-hero__title">Full-Stack Web Developer</h1>
-          <h2 class="large-hero__subtitle"> Self Taught Developler Based in Wellington New Zealand Specializing in performant .Net Core business Apps </h2>
+          <h1> 
+            <span class="large-hero__title">Full-Stack Web Developer </span>
+            <span class="large-hero__subtitle"> Self Taught Developler Based in Wellington New Zealand Specializing in performant .Net Core business Apps </span>
+          </h1>
           <a class="btn btn--margin">button1</a>
           <a class="btn btn--margin">button2 </a>
         </div>
@@ -44,7 +50,7 @@
   <div class="page-section skills" id="skills">
     <div class="wrapper wrapper--small-on-phone">
       
-    <h1 class="section-header">Development Skills</h1>
+    <h2 class="section-header">Development Skills</h2>
 
       <div class="row row--equal-height-at-medium">
 
@@ -98,39 +104,161 @@
       </div>
     </div>
   </div>
-  <div class="page-section projects" id="projects">
-    <div class="wrapper">
-        <h1 class="section-header">Projects</h1>
-      <div class="row row--gutters">
+</div>
 
-        <div class="row__medium-4 projects__div">
-          <div class="projects__black">
-            <img class="projects__img"  src= "images/project1.jpg" alt="first project">
-          </div>
-          <div class="projects__overlay">
-            <h2 class="projects__text" > project involving cool stuff</h2>
-          </div>
-        </div>
-        <div class="row__medium-4">
-          <picture>
-            <img src= "images/project1.jpg" alt="first project">
-          </picture>
-        </div>
-        <div class="row__medium-4">
-          <picture>
-            <img src= "images/project1.jpg" alt="first project">
-          </picture>
-        </div>
+<div class="page-section projects" id="projects">
+  <div class="wrapper wrapper--small-on-phone">
 
+    <h2 class="section-header">Projects</h2>
+
+    <div class="flex-row">
+       
+
+      <div class="flex-col--100s-50m-33l flex-col--padding-1rem">
+        <div class="projects__img">
+          <figure>
+            <img src ="images/project1.jpg" alt = "a project">
+            <figcaption class="overlay">
+              <h4 class="projects__text">Tangy Restaurant</h4>
+              <p class="projects__paragraph">A restaurant website made with .Net Core. Implementing OAuth, shopping cart, automated email senders. Deployed with Azure </p>
+              <a class="btn btn--small btn--center"> Go to Project</a>
+            </figcaption>
+          </figure>
+        </div>
       </div>
-    </div>
+
+      <div class="flex-col--100s-50m-33l flex-col--padding-1rem">
+          <div class="projects__img">
+              <figure>
+                  <img src ="images/project1.jpg" alt = "a project">
+                  <figcaption class="overlay">
+                    <h4> good project</h4>
+                    <a class="btn btn--small btn--center"> Go to project </a>
+                  </figcaption>
+              </figure>
+            </div>
+      </div>
+
+      <div class="flex-col--100s-50m-33l flex-col--padding-1rem">
+        <div class="projects__img">
+              <figure>
+                  <img src ="images/project1.jpg" alt = "a project">
+                  <figcaption class="overlay">
+                    <h4> good project</h4>
+                    <a class="btn btn--small btn--center"> button </a>
+                  </figcaption>
+              </figure>
+        </div>
+      </div>
+      
+      <div class="flex-col--100s-50m-33l flex-col--padding-1rem">
+        <div class="projects__img">
+          <figure>
+              <img src ="images/project1.jpg" alt = "a project">
+              <figcaption class="overlay">
+                <h4> good project</h4>
+                <a class="btn btn--small btn--center"> button </a>
+              </figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="flex-col--100s-50m-33l flex-col--padding-1rem">
+        <div class="projects__img">
+          <figure>
+              <img src ="images/project1.jpg" alt = "a project">
+              <figcaption class="overlay">
+                <h4> good project</h4>
+                <a class="btn btn--small btn--center"> button </a>
+              </figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="flex-col--100s-50m-33l flex-col--padding-1rem">
+        <div class="projects__img">
+          <figure>
+              <img src ="images/project1.jpg" alt = "a project">
+              <figcaption class="overlay">
+                <h4> good project</h4>
+                <a class="btn btn--small btn--center"> button </a>
+              </figcaption>
+          </figure>
+        </div>
+      </div>
+
+    </div>       
+  </div>
+</div>
+
+<section class="contact" id="contact">
+  
+  
+  <div class="contact__box">
+
+    <div id="map" class="contact__map"></div>
+    <section class="contact__background">
+      <div class="contact__form">
+        <div class="row">
+          <h2 class="section-header"> Get In Touch </h2>
+              <form method="POST" action="#" class="contact-form">
+                  <div class="flex-row flex-row--padding-top flex-row--align-center">
+                      <div class="flex-col--100s-33m-33l flex-col--align-right">
+                          <label class="contact__label" for="name">NAME</label>
+                      </div>
+                      <div class="flex-col--100s-66m-66l flex-col--max600 flex-col--align-right">
+                          <input class="contact__input" type="text" name="name" id="name" placeholder="" required>
+                      </div>
+                  </div>
+                  <div class="flex-row flex-row--padding-top flex-row--align-center">
+                      <div class="flex-col--100s-33m-33l flex-col--align-right">
+                          <label class="contact__label" for="email">EMAIL</label>
+                      </div>
+                      <div class="flex-col--100s-66m-66l flex-col--max600">
+                          <input class="contact__input" type="email" name="email" id="email" placeholder="" required>
+                      </div>
+                  </div>
+
+                  <div class="flex-row flex-row--padding-top flex-row--align-center">
+                      <div class="flex-col--100s-33m-33l flex-col--align-right">
+                          <label class="contact__label">MESSAGE</label>
+                      </div>
+                      <div class="flex-col--100s-66m-66l flex-col--max600">
+                          <textarea class="contact__input" name="message" id="mesaage" placeholder="" cols="30" rows="2"></textarea>
+                      </div>
+                  </div>
+                  <div class="flex-row flex-row--padding-top flex-row--align-center">
+                      <div class="flex-col--100s-33m-33l flex-col--align-right">
+                          
+                      </div>
+                      <div class="flex-col--100s-66m-66l flex-col--max600 flex-col--align-center" >                                          
+                        <label class="contact__newsletter" for="checkbox">Newsletter:
+                          <input class="contact__checkbox--remove" type="checkbox" name="checkbox" id="checkbox" checked="checked">
+                          <span class="contact__checkbox"></span>
+                        </label>
+                        <input class="contact__btn contact__btn--disabled btn btn--small" type="submit" value="send it">   
+                      </div>
+                  </div>
+                  <div class="flex-row flex-row--padding-top flex-row--align-center">
+                      <div class="flex-col--100s-33m-33l flex-col--align-right">
+                          <label>&nbsp;</label>
+                      </div>
+                      <div class="flex-col--100s-66m-66l flex-col--max600">
+                          
+                      </div>
+                  </div>
+              </form>
+          </div>
+        </div>
+  </section>
 
   </div>
 
+</section>
 
 
 
-  <footer class="site-footer">
+
     
   <!--
   <div class="modal">
@@ -141,5 +269,9 @@
   </div>
 
   -->
+  
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSOw1Yu3D1WzfLZItDcBP0KPpPlx23l_k"></script>
 <script type="text/javascript" src="bundle.js"></script></body>
+
+
 </html>
