@@ -41,7 +41,7 @@ function Map (resize = 740) {
         color: 'rgb(70, 126, 168)'
       },
       icon: {
-        path: google.maps.SymbolPath.CIRCLE, //or any others
+        path: google.maps.SymbolPath.CIRCLE,
         scale: 0.1
       },
       
@@ -51,7 +51,7 @@ function Map (resize = 740) {
 
 
 
-  (this.events = () => { 
+  (this.events = () => {
     const here = this
     document.addEventListener('DOMContentLoaded', this.initMap)
     window.addEventListener('resize', function resizeMap (e) {

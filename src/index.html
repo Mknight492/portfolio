@@ -7,8 +7,6 @@
   <meta name="keywords" content="Travel planning, travel bundles, travel escapes affordable travel">
   <meta name="description" content="Your clarity. One trip away. We create soul restoring journeys that inspire you to be you.">
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
-
-  <script type="text/javascript" src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/markerwithlabel/src/markerwithlabel.js"></script>
 </head>
 
 <body>
@@ -16,27 +14,27 @@
   <header class="header">
 
     <nav class="header__nav">
-      <div class="header__nav__logo">
+      <div class="header__nav-logo">
         <p> <span class="text140">K</span>night &nbsp; <span class="text140">D</span>esigns <i class="header__icon cheveron-left"></i><i
             class="knight"></i><i class="cheveron-right"></i></p>
       </div>
-      <ul class="header__nav__ul">
-        <li><a class="active" href="#home">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <ul class="header__nav-ul">
+        <li class="home--link link" data-link="home" >Home </li>
+        <li class="skills--link link" data-link="skills">Skills </li>
+        <li class="projects--link link" data-link="projects">Projects </li>     
+        <li class="contact--link link" data-link="contact">Contact </li>
       </ul>
-      <div class="header__nav__icon-div">
-        <i class="header__nav__icon bars"></i>
-        <i class="header__nav__icon header__nav__icon--hidden cross"></i>
+      <div class="header__nav-icon-div">
+        <i class="header__nav-icon bars"></i>
+        <i class="header__nav-icon header__nav-icon--hidden cross"></i>
       </div>
     </nav>
 
   </header>
 
-  <div class="large-hero" id='home'>
+  <div class="large-hero js-waypoint" id='home' data-link="home--link">
     <picture class="large-hero__background-img">
-      <img src="images/hero--large.jpg" alt="Laptop and designer">
+      <!-- <img src="images/hero--large.jpg" alt="Laptop and designer"> -->
     </picture>
     <div class="wrapper">
       <div class="large-hero__text-content">
@@ -45,13 +43,13 @@
           <span class="large-hero__subtitle"> Self Taught Developler Based in Wellington New Zealand Specializing in
             performant .Net Core business Apps </span>
         </h1>
-        <a class="btn btn--margin">button1</a>
-        <a class="btn btn--margin">button2 </a>
+        <button  class="btn btn--margin link" data-link="projects">My Projects</button>
+        <button  class="btn btn--margin link" data-link="contact">Contact Me </button>
       </div>
     </div>
 
   </div>
-  <div class="page-section skills" id="skills">
+  <div class="page-section skills js-waypoint" id="skills" data-link="skills--link">
     <div class="wrapper wrapper--small-on-phone">
 
       <h2 class="section-header">Development Skills</h2>
@@ -113,7 +111,7 @@
   </div>
   </div>
 
-  <div class="page-section projects" id="projects">
+  <div class="page-section projects js-waypoint" id="projects" data-link="projects--link">
     <div class="wrapper wrapper--small-on-phone">
 
       <h2 class="section-header">Projects</h2>
@@ -199,16 +197,16 @@
     </div>
   </div>
 
-  <section class="contact page-section" id="contact">
+  <section class="contact page-section" >
 
 
-    <div class="contact__box">
+    <div class="contact__box js-waypoint" id="contact" data-link="contact--link">
 
       <div id="map" class="contact__map"></div>
-      <section class="contact__background">
+      <section class="contact__background" >
         <div class="contact__form">
           <div class="row">
-            <h2 class="section-header"> Get In Touch </h2>
+            <h2 class="section-header" > Get In Touch </h2>
             <form method="POST" action="#" class="contact-form">
               <div class="flex-row flex-row--padding-top flex-row--align-center">
                 <div class="flex-col--100s-33m-33l flex-col--align-right">

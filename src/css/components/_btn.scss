@@ -4,24 +4,32 @@
     padding: 0.4rem 0.8rem;
     display: inline-block;
     text-decoration: none;
-    border: 3px solid $color-primary-4;
-    border-radius: 0.5rem; 
+    border: 3px solid $color-primary-3;
+    border-radius: 0.3rem; 
     font-size: 0.9rem;
-
+    transition: background-color  .2s ease-in-out;
+    transition: color .2s ease-in-out;
+    transition: transform .1s ease-in-out;
     @include atSmall {
         font-size: 1.0rem;
         padding: 0.5rem 0.9rem;
+        border-radius: 0.4rem; 
     }
     @include atMedium{
         font-size: 1.1rem;
         padding: 0.7rem 1.2rem;
+        border-radius: 0.6rem; 
     }
     @include atLarge{
         font-size:  1.25rem;
+        border-radius: 0.8rem; 
     }
 
     &:hover{
-        background-color: $color-primary-4;
+        background-color: $color-primary-2;
+        //color: $color-secondary-1-0;
+        //font-weight: 500;
+        transform: scale(1.02)
     }
 
     &--small{
