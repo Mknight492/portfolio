@@ -1,5 +1,7 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const postcssPresetEnv = require('postcss-preset-env');
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const path = require("path")
 
 module.exports = () => (module.exports = {
   module: {
@@ -23,7 +25,7 @@ module.exports = () => (module.exports = {
               require('postcss-import'),
               require('postcss-mixins'),
               postcssPresetEnv({
-                exportTo: './dist/file.css',
+                exportTo: './wwwroot/dist/file.css',
                 features: {
                   'nesting-rules': true
                 }
@@ -39,7 +41,13 @@ module.exports = () => (module.exports = {
       ]
     }]
   },
-  plugins: [new MiniCssExtractPlugin()]
+  plugins: [
+    new MiniCssExtractPlugin(),
+    new HtmlWebpackPlugin({           
+      template: path.resolve(__dirname, '../wwwroot/source/index.html'),
+      filename: '../../views/home/index.cshtml',
+      inject: 'body' }),
+  ]
 })
 
 //              require('cssnano')(),

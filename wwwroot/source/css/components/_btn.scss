@@ -1,0 +1,74 @@
+.btn{
+    background-color: $color-primary-0;
+    color: #FFF;
+    padding: 0.4rem 0.8rem;
+    display: inline-block;
+    text-decoration: none;
+    border: 3px solid $color-primary-3;
+    border-radius: 0.3rem; 
+    font-size: 0.9rem;
+    transition: background-color  .2s ease-in-out;
+    transition: color .2s ease-in-out;
+    transition: transform .1s ease-in-out;
+    @include atSmall {
+        font-size: 1.0rem;
+        padding: 0.5rem 0.9rem;
+        border-radius: 0.4rem; 
+    }
+    @include atMedium{
+        font-size: 1.1rem;
+        padding: 0.7rem 1.2rem;
+        border-radius: 0.6rem; 
+    }
+    @include atLarge{
+        font-size:  1.25rem;
+        border-radius: 0.8rem; 
+    }
+
+    &:hover{
+        background-color: $color-primary-2;
+        //color: $color-secondary-1-0;
+        //font-weight: 500;
+        transform: scale(1.02)
+    }
+
+    &--small{
+        font-size: .8rem;
+        padding: .3rem .8rem;
+        @include atSmall{
+            font-size: 1rem;
+            padding: .5rem 1rem;
+        }
+    }
+    &--center{
+        text-align: center;
+    }
+
+    &--large{
+        padding: 1.1rem 2rem;
+
+        @include atSmall {
+            font-size: 1.0rem;
+        }
+        @include atMedium{
+            font-size: 1.1rem;
+        }
+        @include atLarge{
+            font-size:  1.25rem;
+        }
+    }
+
+    &--margin{
+        margin: 0.6rem 0.6rem;
+        @include atMedium{
+            margin: 1rem 1rem;
+        }
+    }
+    &--disabled{
+        background-color: #555555;
+        &:hover{
+            background-color: #555555;
+            cursor: not-allowed;
+        }
+    }
+}

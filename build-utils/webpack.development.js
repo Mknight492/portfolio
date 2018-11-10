@@ -15,7 +15,7 @@ module.exports = () => (module.exports = {
               plugins: () => [
                 require('postcss-mixins'),
                 postcssPresetEnv({
-                  exportTo: './dist/file.css',
+                  exportTo: './wwwroot/dist/file.css',
                   features: {
                     'nesting-rules': true,
                   },
@@ -35,7 +35,7 @@ module.exports = () => (module.exports = {
   },
   devServer: {
     stats: 'errors-only',
-    contentBase: './src/index.js',
+    contentBase: '.wwwroot/src/index.js',
   },
 }
 );

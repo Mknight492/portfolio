@@ -1,0 +1,312 @@
+@{
+  Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio</title>
+  <meta name="keywords" content="Travel planning, travel bundles, travel escapes affordable travel">
+  <meta name="description" content="Your clarity. One trip away. We create soul restoring journeys that inspire you to be you.">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+  <header class="header">
+
+    <nav class="header__nav">
+      <div class="header__nav-logo">
+        <p> <span class="text140">K</span>night &nbsp; <span class="text140">D</span>esigns <i class="header__icon cheveron-left"></i><i
+            class="knight"></i><i class="cheveron-right"></i></p>
+      </div>
+      <ul class="header__nav-ul">
+        <li class="home--link link" data-link="home" >Home </li>
+        <li class="skills--link link" data-link="skills">Skills </li>
+        <li class="projects--link link" data-link="projects">Projects </li>     
+        <li class="contact--link link" data-link="contact">Contact </li>
+      </ul>
+      <div class="header__nav-icon-div">
+        <i class="header__nav-icon bars"></i>
+        <i class="header__nav-icon header__nav-icon--hidden cross"></i>
+      </div>
+    </nav>
+
+  </header>
+
+  <div class="large-hero js-waypoint" id='home' data-link="home--link">
+    <picture class="large-hero__background-img">
+      <!-- <img src="images/hero--large.jpg" alt="Laptop and designer"> -->
+    </picture>
+    <div class="wrapper">
+      <div class="large-hero__text-content">
+        <h1>
+          <span class="large-hero__title">Full-Stack Web Developer </span>
+          <span class="large-hero__subtitle"> Self taught developler based in Wellington, New Zealand Specializing in
+            performant .Net Core business Apps </span>
+        </h1>
+        <button  class="btn btn--margin link" data-link="projects">My Projects</button>
+        <button  class="btn btn--margin link" data-link="contact">Contact Me </button>
+      </div>
+    </div>
+
+  </div>
+  <div class="page-section skills js-waypoint" id="skills" data-link="skills--link">
+    <div class="wrapper wrapper--small-on-phone">
+
+      <h2 class="section-header">Development Skills</h2>
+
+      <div class="row row--equal-height-at-medium">
+
+        <div class="skills__box row__medium-4 row--max350">
+          <p class="skills__icon"> <span class="cogs cogs--secondary"> </span></p>
+          <h3 class="skills__title">Back End Stack</h3>
+          <p class="skills_text-content">passionate about technology and design, I like to build things fro scratch
+            with the best tecnology for the job</p>
+          <h4 class="skills__subtitle"> Languages</h4>
+          <p class="skills_text-content">C#, Javacript</p>
+          <h4 class="skills__subtitle"> Dev Tools </h4>
+          <ul class="list">
+            <li>.Net Core</li>
+            <li>Node</li>
+            <li>Azure</li>
+            <li>REST</li>
+            <li>SQL</li>
+            <li>Git +/- Github</li>
+          </ul>
+        </div>
+        <div class="skills__box skills__box--middle row__medium-4 row--max450">
+          <p class="skills__icon"> <span class="stack stack--secondary"> </span></p>
+          <h3 class="skills__title">Front End Stack</h3>
+          <p class="skills_text-content">passionate about technology and design, I like to build things from scratch
+            with the best tecnology for the job</p>
+          <h4 class="skills__subtitle"> Languages</h4>
+          <p class="skills_text-content">HTML5, CSS3, SCSS, Javascript</p>
+          <h4 class="skills__subtitle"> Dev Tools </h4>
+          <ul class="list">
+            <li>Webpack</li>
+            <li>Webpack-dev-server</li>
+            <li>Code-Splitting</li>
+            <li>Lazy-loading</li>
+            <li>React</li>
+          </ul>
+        </div>
+
+        <div class="skills__box skills__box--end row__medium-4 row--max450">
+          <p class="skills__icon"> <span class="laptop laptop--secondary"> </span></p>
+          <h3 class="skills__title">Fundamentals</h3>
+          <p class="skills_text-content">I love computer science, so despite being self taught, I'm constantly looking
+            to expand my CS and design fundamentals.</p>
+          <h4 class="skills__subtitle"> Design:</h4>
+          <p class="skills_text-content">UI, UX, Mobile first, Web</p>
+          <h4 class="skills__subtitle"> Computer Science </h4>
+          <ul class="list">
+            <li>Advanced algorithims</li>
+            <li>Advanced data structures</li>
+            <li>OOP best practice</li>
+            <li>Functional programming</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="page-section projects js-waypoint" id="projects" data-link="projects--link">
+    <div class="wrapper wrapper--small-on-phone">
+
+      <h2 class="section-header">Projects</h2>
+
+      <div class="flex-row">
+
+
+        <div class="flex-col--100s-50m-33l flex-col--padding-1rem flex-col--max400">
+          <div class="projects__img">
+            <figure>
+              <img src="images/project1.jpg" alt="a project">
+              <figcaption class="overlay">
+                <h4 class="projects__text">Tangy Restaurant</h4>
+                <p class="projects__paragraph">A restaurant website made with .Net Core. Implementing OAuth, shopping
+                  cart, automated email senders. Deployed with Azure </p>
+                <a class="btn btn--small btn--center"> Go to Project</a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="flex-col--100s-50m-33l flex-col--padding-1rem flex-col--max400">
+          <div class="projects__img">
+            <figure>
+              <img src="./images/project1.jpg" alt="a project">
+              <figcaption class="overlay">
+                <h4> good project</h4>
+                <a class="btn btn--small btn--center"> Go to project </a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="flex-col--100s-50m-33l flex-col--padding-1rem flex-col--max400">
+          <div class="projects__img">
+            <figure>
+              <img src="images/project1.jpg" alt="a project">
+              <figcaption class="overlay">
+                <h4> good project</h4>
+                <a class="btn btn--small btn--center"> button </a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="flex-col--100s-50m-33l flex-col--padding-1rem flex-col--max400">
+          <div class="projects__img">
+            <figure>
+              <img src="images/project1.jpg" alt="a project">
+              <figcaption class="overlay">
+                <h4> good project</h4>
+                <a class="btn btn--small btn--center"> button </a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="flex-col--100s-50m-33l flex-col--padding-1rem flex-col--max400">
+          <div class="projects__img">
+            <figure>
+              <img src="images/project1.jpg" alt="a project">
+              <figcaption class="overlay">
+                <h4> good project</h4>
+                <a class="btn btn--small btn--center"> button </a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="flex-col--100s-50m-33l flex-col--padding-1rem flex-col--max400">
+          <div class="projects__img">
+            <figure>
+              <img src="images/project1.jpg" alt="a project">
+              <figcaption class="overlay">
+                <h4> good project</h4>
+                <a class="btn btn--small btn--center"> button </a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <section class="contact page-section" >
+
+
+    <div class="contact__box"  >
+
+      <div id="map" class="contact__map"></div>
+      <section class="contact__background js-waypoint" data-link="contact--link" id="contact" >
+        <div class="contact__form" >
+          <div class="row">
+            <h2 class="section-header" > Get In Touch </h2>
+            <form method="POST" action="#" class="contact-form">
+              <div class="flex-row flex-row--padding-top flex-row--align-center">
+                <div class="flex-col--100s-33m-33l flex-col--align-right">
+                  <label class="contact__label" for="name">NAME</label>
+                </div>
+                <div class="flex-col--100s-66m-66l flex-col--max600 flex-col--align-right">
+                  <input class="contact__input" type="text" name="name" id="name" placeholder="" required>
+                </div>
+              </div>
+              <div class="flex-row flex-row--padding-top flex-row--align-center">
+                <div class="flex-col--100s-33m-33l flex-col--align-right">
+                  <label class="contact__label" for="email">EMAIL</label>
+                </div>
+                <div class="flex-col--100s-66m-66l flex-col--max600">
+                  <input class="contact__input" type="email" name="email" id="email" placeholder="" required>
+                </div>
+              </div>
+
+              <div class="flex-row flex-row--padding-top flex-row--align-center">
+                <div class="flex-col--100s-33m-33l flex-col--align-right">
+                  <label class="contact__label">MESSAGE</label>
+                </div>
+                <div class="flex-col--100s-66m-66l flex-col--max600">
+                  <textarea class="contact__input" name="message" id="mesaage" placeholder="" cols="30" rows="2"></textarea>
+                </div>
+              </div>
+              <div class="flex-row flex-row--padding-top flex-row--align-center">
+                <div class="flex-col--100s-33m-33l flex-col--align-right">
+
+                </div>
+                <div class="flex-col--100s-66m-66l flex-col--max600 flex-col--align-center">
+                  <label class="contact__newsletter" for="checkbox">Newsletter:
+                    <input class="contact__checkbox--remove" type="checkbox" name="checkbox" id="checkbox" checked="checked">
+                    <span class="contact__checkbox"></span>
+                  </label>
+                  <input class="contact__btn btn--disabled btn btn--small" type="submit" value="send it">
+                </div>
+              </div>
+              <div class="flex-row flex-row--padding-top flex-row--align-center">
+                <div class="flex-col--100s-33m-33l flex-col--align-right">
+                  <label>&nbsp;</label>
+                </div>
+                <div class="flex-col--100s-66m-66l flex-col--max600">
+
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+  </section>
+
+  <footer class="footer page-section page-section--small">
+    <div class="wrapper wrapper--narrow">
+      <div class="footer__icons">
+        <i class="footer__icon cheveron-left"></i><i class="footer__icon knight"></i><i class="footer__icon cheveron-right"></i>
+      </div>
+      <div class="footer__motto">
+        Combining passion, elegance, clean code and best practice.
+      </div>
+      <div class="footer__links">
+        <a href="https://www.facebook.com/profile.php?id=732993236" class= ""> <i class="facebook"></i> </a>
+        <a href="https://www.linkedin.com/in/michael-knight-734b12164/"> <i class="linkedin"></i> </a>
+        <a href="https://www.hackerrank.com/michaelknight492"> <i class="hackerrank"></i> </a>
+        <a href="https://stackoverflow.com/users/10512580/michael-knight"> <i class="stackoverflow"></i> </a>
+        <a href="https://github.com/Mknight492"> <i class="github"></i> </a>
+
+      </div>
+      <div class="footer__copyright">
+
+      </div>
+      <div class="footer_attributions">
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+  <!--
+  <div class="modal">
+    <h2 class="section-title section-title--blue"> 
+      <img class="section-title__icon" src="assets/images/icons/mail.svg">
+      Get in <strong>Touch</strong>
+    </h2>
+  </div>
+
+   -->
+
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSOw1Yu3D1WzfLZItDcBP0KPpPlx23l_k"></script>
+</body>
+
+
+</html>

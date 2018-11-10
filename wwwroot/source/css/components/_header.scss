@@ -1,0 +1,109 @@
+.header{
+    position: fixed;
+    top:0;
+    background-color: rgba($color-primary-0, 0.85);
+    width: 100%;
+    color: #fff;
+    z-index: 3;
+   
+
+    &__nav{
+        display: grid;
+        grid-auto-columns: 4fr 2fr;
+        max-width: 1720px;
+        margin: 0 auto;
+        padding: 0.5rem 0;
+ 
+        @include atMedium{
+            padding: 0.8rem 0;
+            grid-auto-columns: 2fr 3fr;
+        }
+    }
+
+    &__nav-logo{
+        grid-column: 1;
+        justify-self: center;
+        align-self: center;
+        font-size: 1rem;
+        text-transform: uppercase;
+        @include atSmall{
+            font-size: 1.2rem;
+        }
+        @include atMedium{
+            font-size: 1.3rem;
+        }
+    }
+    &__nav-ul{
+        display: none;
+        grid-column: 2;
+        justify-self: center;
+        align-self: center;
+
+        @include atMedium{
+            display: block;
+        }
+        li{
+            display: inline-block;
+            padding: 10px 0;
+            margin-left: 10px;
+            font-size: 1rem;
+            font-weight: 300;
+            letter-spacing: 0.5px;
+
+            &:hover{
+                color: $color-secondary-1-0;
+            }
+            @include atMedium{
+                font-size: 1.2rem;
+                font-weight: 400;
+                margin-left: 10px;
+            }
+            @include atLarge{
+                font-size: 1.3rem;
+                margin-left: 15px;
+            }
+        }
+        &--active{
+            li{
+                display: block;
+                @include atMedium{
+                    display: inline-block;
+                }
+
+            }
+            display: block;
+            grid-row: 2;
+            grid-column: 2;
+            justify-self: end;
+            text-align: right;
+            padding-right: 1.5rem;
+            @include atMedium{
+                display: block;
+                grid-row: 1;
+            }
+        }
+        &--current{
+            border-bottom: 2px solid #fff;
+        }
+
+
+    }
+    &__nav-icon-div{
+        grid-column:2;
+        justify-self: end;
+        align-self: center;
+
+        padding-right: 1.5rem;
+        z-index: 5;
+        @include atMedium{
+            display: none;
+        }
+
+
+    }
+    &__nav-icon{
+        &--hidden{
+            display: none;
+        }
+    }
+}

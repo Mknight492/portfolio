@@ -1,3 +1,4 @@
+﻿const path = require('path');
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const webpackMerge = require("webpack-merge");
@@ -11,6 +12,14 @@ const presetConfig = require("./build-utils/loadPresets");
 module.exports = ({ mode, presets } = { mode: "production", presets: [] }) => {
   return webpackMerge(
     {
+      entry:  { 'main': path.resolve(__dirname, './wwwroot/source/index.js')},
+      output: {
+       
+        path: path.resolve(__dirname, './wwwroot/dist'),
+        filename: 'bundle.js',
+        publicPath: '/'
+        
+      },
       devtool: 'inline-source-map',
       mode,
       module: {
@@ -21,7 +30,7 @@ module.exports = ({ mode, presets } = { mode: "production", presets: [] }) => {
               {
                 loader: "url-loader",
                 options: {
-                  limit: 50000000
+                  limit: 5000000
                 }
               }
             ]
@@ -39,16 +48,14 @@ module.exports = ({ mode, presets } = { mode: "production", presets: [] }) => {
         }
         ]
       },
-      output: {
-        filename: "bundle.js",
-      },
       plugins: [
-        new HtmlWebpackPlugin({ 
-          template: './src/index.html',
+        new HtmlWebpackPlugin({           
+          template: path.resolve(__dirname, './wwwroot/source/index.html'),
           filename: 'index.html',
           inject: 'body' }),
         new webpack.ProgressPlugin(),
-        new CopyWebpackPlugin([{ from: './src/assets', to: '' }]),
+        new CopyWebpackPlugin([{ from: path.resolve(__dirname, './wwwroot/source/assets'), to: '' }]),
+        new CopyWebpackPlugin([{ from: path.resolve(__dirname, './wwwroot/source/assets/webfonts'), to: '../webfonts' }]),
       ]
     },
     modeConfig(mode),
@@ -56,4 +63,6 @@ module.exports = ({ mode, presets } = { mode: "production", presets: [] }) => {
   );
 };
 
-/* , 'plugin-transform-regenerator' */
+
+
+//{ 'main': path.resolve(__dirname, './wwwroot/source/index.js')},

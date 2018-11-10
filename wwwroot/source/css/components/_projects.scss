@@ -1,0 +1,91 @@
+.projects{
+    
+
+    &__img{
+        //background-color: #293347;
+        background: linear-gradient(35deg,#CCFFFF, #FFCCCC);
+        position: relative;
+        border-radius: 2rem;      
+        overflow: hidden;
+        
+        &:hover{
+            img{
+                opacity: 0.1;
+            }
+            .overlay{
+                opacity: 1;
+                transform: scale(1) translateY(-50%);
+            }
+        }
+        
+        img{
+            border-radius: 2rem;
+            display: block;
+            opacity: 0.7;
+            transition: all 0.5s ease-in-out;
+            &:hover{
+                opacity: 0.1;
+            }
+
+        }
+    }
+    &__div{
+        padding-top: 2rem;
+    }
+    &__text{
+        font-size:1rem;
+        @include atVerySmall{
+            font-size:1.4rem;
+        }
+    }
+    &__paragraph{
+        font-size: .8rem;
+        padding-bottom: 0.8rem;
+        @include atVerySmall{
+            font-size: 1rem;
+        }
+    }
+
+    .overlay{
+        display: block;
+        position: absolute;
+        top:50%;
+        left:0;
+        width: 100%;
+        padding: 0 10%;
+        text-align: center;
+        opacity: 0;
+        transform: scale(1.5);
+        transition: all 0.5s ease-in-out;
+        line-height: 1.45;
+        @include atVerySmall{
+
+            line-height: 1.65;
+        }
+    }
+  
+}
+
+/*
+.overlay{
+    display: block;
+    position: absolute;
+    top:10%;
+    left:5%; 
+    transform: translate( -33%, -33%);
+    text-align: center;
+    width: 90%;
+    opacity: 0;
+    transform: scale(1.5);
+    transition: all 0.5s ease-in-out;
+    line-height: 1.45;
+    @include atSmall{
+        top: 10%;
+        line-height: 1.65;
+    }
+
+    @include atLarge{
+        top: 10%;
+    }
+}
+*/
