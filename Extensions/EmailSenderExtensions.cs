@@ -18,14 +18,11 @@ namespace ProjectWebpack.Services
 
 
 
-        public static Task SendContactDetails(this IEmailSender emailSender, string email, string message,string name)
+        public static Task SendContactDetails(this IEmailSender emailSender, string email, string html,string name)
         {
             const string subject = "contacting Knight Web Development Services";
-            string returnMessage = "Thanks for contacting me with the following message: " + message 
-                + " I will be contacting you shortly";
 
-
-            return emailSender.SendEmailAsync(email, subject, returnMessage);
+            return emailSender.SendEmailAsync(email, subject, html);
         }
     }
 }

@@ -20,6 +20,7 @@ namespace ProjectWebpack
         {
             services.AddMvc();
             services.AddTransient<IEmailSender, EmailSender>();
+            services.AddScoped<IViewRender, ViewRender>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
