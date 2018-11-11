@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.SpaServices.Webpack;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.Extensions.DependencyInjection;
+using ProjectWebpack.Services;
 
 namespace ProjectWebpack
 {
@@ -18,6 +19,7 @@ namespace ProjectWebpack
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddTransient<IEmailSender, EmailSender>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -26,11 +28,12 @@ namespace ProjectWebpack
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseBrowserLink();
                 //app.UseWebpackDevMiddleware(new WebpackDevMiddlewareOptions{
                 //    HotModuleReplacement = true
                 //});
             }
-
+            
             app.UseStaticFiles();
 
             app.UseMvc(routes =>

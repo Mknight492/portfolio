@@ -35,7 +35,7 @@ module.exports = () => (module.exports = {
   },
   devServer: {
     stats: 'errors-only',
-    contentBase: '.wwwroot/src/index.js',
+    contentBase: 'source/index.js',
   },
 }
 );

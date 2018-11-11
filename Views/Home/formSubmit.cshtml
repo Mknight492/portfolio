@@ -1,0 +1,12 @@
+@{
+    Layout = null;
+}
+<h2> form submitted</h2>
+<a id="form" asp-action="Index"></a>
+<script>
+
+    var origin = window.location.origin;
+    setTimeout(function() {
+        window.location.replace( origin)
+    }, 5000)
+</script>
