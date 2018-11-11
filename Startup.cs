@@ -34,7 +34,7 @@ namespace ProjectWebpack
                 //    HotModuleReplacement = true
                 //});
             }
-            
+            app.UseDeveloperExceptionPage();
             app.UseStaticFiles();
 
             app.UseMvc(routes =>

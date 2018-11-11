@@ -34,9 +34,10 @@ namespace ProjectWebpack.Controllers
         public async Task<IActionResult> FormSubmit(ContactForm model)
         {
             
-            string html = await _viewRender.RenderAsync("~/Emails/Email.cshtml", model);
+            //string html = await _viewRender.RenderAsync("~/Emails/Email.cshtml", model);
+            var html = "sigh";
             await _emailSender.SendContactDetails(model.email,html,model.name);
-            await _emailSender.SendContactDetails(SD.Email, html, model.email);
+            //await _emailSender.SendContactDetails(SD.Email, html, model.email);
             return View();
         }
     }
