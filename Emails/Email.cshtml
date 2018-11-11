@@ -1,0 +1,24 @@
+﻿@model ProjectWebpack.Models.ContactForm
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Email</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+    <style>
+    </style>
+</head>
+<body>
+    <div style="display: block; background-color: rgb(70, 126, 168); padding: 30px; color: white;">
+        <h2 style="color: white;"> Thanks for contacting Knight Web Designs @Model.name!</h2>
+
+        <h3 style="color: white;"> We will read through the following message and get back to you shortly</h3>
+        <p style="color: white;"> @Model.message</p>
+        <h4 style="color: white;"> Many Thanks, <br> Knight Web Designs </h4>
+    </div>
+</body>
+</html>

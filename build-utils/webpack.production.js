@@ -43,10 +43,10 @@ module.exports = () => (module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin(),
-    new HtmlWebpackPlugin({           
-      template: path.resolve(__dirname, '../wwwroot/source/index.html'),
-      filename: '../../views/home/index.cshtml',
-      inject: 'body' }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, '../source/index.html'),
+      filename: '../views/home/index.cshtml',
+      inject: 'body' })
   ]
 })
 

@@ -21,7 +21,8 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
-      "applicationUrl": "http://localhost:56668/"
+      "applicationUrl": "http://localhost:56668/",
+      "script": "npm run prod"
     }
   }
 }
