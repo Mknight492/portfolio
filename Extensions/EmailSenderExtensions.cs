@@ -24,5 +24,16 @@ namespace ProjectWebpack.Services
 
             return emailSender.SendEmailAsync(email, subject, html);
         }
+
+            public static Task contactedNotifation(this IEmailSender emailSender, string myEmail, string contactEmail, string message, string name)
+        {
+            string subject = $"contacted on Knight Designs Pages by {name} ";
+            string formattedMessage = $"You have been contacted by {name}  from {contactEmail} with the following message: \n "
+            + $"{message}";
+
+            return emailSender.SendEmailAsync(myEmail, subject, formattedMessage);
+        }
+
+        
     }
 }

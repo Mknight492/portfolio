@@ -8,21 +8,18 @@ function Map (resize = 740) {
   // variable to keep track of prev screen size
   let oldWidth = -1
   this.initMap = () => {
-    let mapCenter = {}
-
-    if (window.innerWidth >= resize) {
-      // screen greater than resize and map center should be to the right of the logo
-      mapCenter.lat = -41.2942303
-      mapCenter.lng = 174.8270504
-    } else {
-      // screen is less than resize and map center should be on the logo
-      mapCenter.lat = -41.2942303
-      mapCenter.lng = 174.7958889
+    let mapCenter = {
+      lat: -41.2916185,
+      lng: 174.8122418
+    }
+    let logoLocation = {
+      lat: mapCenter.lat,
+      lng: mapCenter.lng - 0.0311615 // moves the center to the right(so the logo sits to the left on a large screen)
     }
 
-    let logoLocation = {
-      lat: -41.2942303,
-      lng: 174.7958889
+    if (window.innerWidth <= resize) {
+      // if screen is less than the resize limit then center the map on top of the logo
+      mapCenter.lng = logoLocation.lng
     }
 
     let map = new google.maps.Map(document.getElementById('map'), {
@@ -38,7 +35,7 @@ function Map (resize = 740) {
         fontSize: '3rem',
         fontWeight: '900',
         text: '\uf053\uf441\uf054',
-        color: 'rgb(70, 126, 168)'
+        color: 'rgb(49, 89, 119)'
       },
       icon: {
         path: google.maps.SymbolPath.CIRCLE,

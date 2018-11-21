@@ -4,7 +4,7 @@
     "profile" : "default",
     "region"  : "ap-southeast-2",
     "application" : "portfolio",
-    "environment" : "Portfolio-https",
+    "environment" : "Portfolio-env",
     "health-check-url" : "/index",
     "iis-website"      : "Default Web Site",
     "app-path"         : "/",

@@ -1,12 +1,41 @@
+
+@model ProjectWebpack.Models.ContactForm
 @{
     Layout = null;
 }
-<h2> form submitted</h2>
-<a id="form" asp-action="Index"></a>
-<script>
 
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio</title>
+  <meta name="keywords" content="Travel planning, travel bundles, travel escapes affordable travel">
+  <meta name="description" content="Your clarity. One trip away. We create soul restoring journeys that inspire you to be you.">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+<link href="/main.css" rel="stylesheet"></head>
+
+<body>
+
+<div class="form-submitted">
+    <div class="form-submitted__logo">
+        <p> <span class="text140">K</span>night &nbsp; <span class="text140">D</span>esigns <i class="header__icon cheveron-left"></i><i
+            class="knight"></i><i class="cheveron-right"></i></p>
+    </div>
+    <p class="form-submitted__thanks"> Thanks @Model.name for contacting Knight Designs. We will be in contact with you shortly </p>
+    <p class="form-submitted__redirecting"> You will be redirected back to the home page shortly</p>
+    <p class="form-submitted__link-text"> if you haven't been directed back automatically 
+        <a class="form-submitted__link"href="www.knightdesigns.net">click here to  return</a>
+    </p>
+</div>
+
+<script>
     var origin = window.location.origin;
     setTimeout(function() {
         window.location.replace( origin)
-    }, 5000)
+    }, 6000)
+
 </script>
+
+</body>
+
+
+</html>
+

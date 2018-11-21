@@ -35,9 +35,9 @@ namespace ProjectWebpack.Controllers
         {
             string html = await _viewRender.RenderAsync("~/Emails/Email.cshtml", model);
             await _emailSender.SendContactDetails(model.email,html,model.name);
-            await _emailSender.SendContactDetails(SD.Email, html, model.email);
+            await _emailSender.contactedNotifation(SD.Email,model.email, model.message, model.name);
             
-            return View();
+            return View(model);
         }
     }
 }

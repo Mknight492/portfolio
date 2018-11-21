@@ -33,6 +33,7 @@ module.exports = () => (module.exports = {
       },
     ],
   },
+  devtool: 'source-map',
   devServer: {
     stats: 'errors-only',
     contentBase: 'source/index.js',

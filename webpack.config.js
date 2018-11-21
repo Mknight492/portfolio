@@ -26,7 +26,6 @@ module.exports = ({ mode, presets } = { mode: 'production', presets: [] }) => {
       publicPath: publicPath
 
     },
-    devtool: 'inline-source-map',
     mode,
     module: {
       rules: [{
