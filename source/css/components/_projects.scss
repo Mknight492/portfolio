@@ -35,17 +35,11 @@
         padding-top: 2rem;
     }
     &__text{
-        font-size:1rem;
-        @include atVerySmall{
-            font-size:1.4rem;
-        }
+        font-size:1.8rem;
     }
     &__paragraph{
-        font-size: .8rem;
+        font-size: 1.1rem;
         padding-bottom: 0.8rem;
-        @include atVerySmall{
-            font-size: 1rem;
-        }
     }
 
     .overlay{
