@@ -36,7 +36,7 @@ namespace ProjectWebpack
             }
             
             app.UseStaticFiles();
-
+            app.UseDeveloperExceptionPage();
             app.UseMvc(routes =>
                 {
                     routes.MapRoute(

@@ -33,10 +33,10 @@ namespace ProjectWebpack.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> FormSubmit(ContactForm model)
         {
-            
             string html = await _viewRender.RenderAsync("~/Emails/Email.cshtml", model);
             await _emailSender.SendContactDetails(model.email,html,model.name);
             await _emailSender.SendContactDetails(SD.Email, html, model.email);
+            
             return View();
         }
     }
