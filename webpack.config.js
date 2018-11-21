@@ -34,7 +34,7 @@ module.exports = ({ mode, presets } = { mode: 'production', presets: [] }) => {
         use: [{
           loader: 'url-loader',
           options: {
-            limit: 5000000
+            limit: 500
           }
         }]
       },

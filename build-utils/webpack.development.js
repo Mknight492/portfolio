@@ -15,7 +15,7 @@ module.exports = () => (module.exports = {
               plugins: () => [
                 require('postcss-mixins'),
                 postcssPresetEnv({
-                  exportTo: './wwwroot/dist/file.css',
+                  exportTo: './wwwroot/file.css',
                   features: {
                     'nesting-rules': true,
                   },
@@ -26,7 +26,7 @@ module.exports = () => (module.exports = {
                 require('postcss-selector-not')
               ],
             } 
-          }        ,
+          },
           'resolve-url-loader',
           'sass-loader',
         ],

@@ -8,8 +8,8 @@ module.exports = () => (module.exports = {
     rules: [{
 
       test: /\.scss$/,
+      exclude: /FAscss/,
       use: [
-        'style-loader',
         MiniCssExtractPlugin.loader,
         {
           loader: 'css-loader',

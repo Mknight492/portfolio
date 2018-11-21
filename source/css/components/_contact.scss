@@ -67,7 +67,7 @@
         font-size: 1.4rem;
         width:100%;
         &--onfill{
-            border-bottom: 2.5px dashed rgb(109, 149, 221);
+            border-bottom: 2.5px dashed rgb(109, 149, 221) !important;
         }
     }
     &__newsletter{
