@@ -26,7 +26,6 @@ module.exports = ({ mode, presets } = { mode: 'production', presets: [] }) => {
       publicPath: publicPath
 
     },
-    devtool: 'inline-source-map',
     mode,
     module: {
       rules: [{
@@ -34,7 +33,7 @@ module.exports = ({ mode, presets } = { mode: 'production', presets: [] }) => {
         use: [{
           loader: 'url-loader',
           options: {
-            limit: 5000000
+            limit: 500
           }
         }]
       },

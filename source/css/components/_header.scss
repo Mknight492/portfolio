@@ -38,7 +38,7 @@
         grid-column: 2;
         justify-self: center;
         align-self: center;
-
+  
         @include atMedium{
             display: block;
         }
@@ -51,7 +51,10 @@
             letter-spacing: 0.5px;
 
             &:hover{
-                color: $color-secondary-1-0;
+                color: #f39645;
+                font-weight: 500;
+                cursor:pointer;
+
             }
             @include atMedium{
                 font-size: 1.2rem;
@@ -104,6 +107,9 @@
     &__nav-icon{
         &--hidden{
             display: none;
+        }
+        &:hover{
+            cursor:pointer;
         }
     }
 }

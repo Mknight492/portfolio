@@ -1,5 +1,5 @@
 .large-hero{
-    background-image: linear-gradient(to bottom, rgb(83, 83, 83), #000);
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), #000);
     position: relative;
     color: #fff;
     h1{
@@ -9,17 +9,20 @@
 
     &__background-img{
         color: blue;
-        opacity: 0.4;
+        opacity: 0.40;
         display: block;
         line-height: 0;
         background-image:url(../assets/images/hero--large.jpg);
         background-size: cover;
-        background-position: center;
-        height: 70vh;
+        background-position: 41% 50%;
+        height: 100vh;
         img{
             height: auto;
             width: 100%;
             display: block;
+        }
+        @include atMedium{
+            min-height: 600px;
         }
     }
     &__text-content{
@@ -56,11 +59,12 @@
     }
     &__subtitle{
         display: inline-block;
-        font-size: 1rem;
-        line-height: 1.3;
-        font-weight: 300;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        font-weight: 400;
+        padding: 1rem 0;
         @include atSmall{
-            font-size: 1rem;
+            font-size: 1.2rem;
             line-height: 1.65;
             font-weight: 400;
         }

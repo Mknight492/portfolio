@@ -8,6 +8,7 @@ module.exports = () => (module.exports = {
     rules: [{
 
       test: /\.scss$/,
+      exclude: /FAscss/,
       use: [
         'style-loader',
         MiniCssExtractPlugin.loader,
@@ -22,6 +23,7 @@ module.exports = () => (module.exports = {
           options: {
             ident: 'postcss',
             plugins: () => [
+              require('cssnano')(),
               require('postcss-import'),
               require('postcss-mixins'),
               postcssPresetEnv({
@@ -36,7 +38,7 @@ module.exports = () => (module.exports = {
             ]
           }
         },
-        "resolve-url-loader",
+        //"resolve-url-loader",
         "sass-loader"
       ]
     }]

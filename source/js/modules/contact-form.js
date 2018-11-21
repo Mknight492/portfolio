@@ -24,8 +24,10 @@ function ContactForm () {
     }, true)
     if (complete) {
       contactBtn.classList.remove('btn--disabled')
+      contactBtn.disabled = false
     } else {
       contactBtn.classList.add('btn--disabled')
+      contactBtn.disabled = true
     }
   }
   // IIFE adding event listners using DOMelements + functions

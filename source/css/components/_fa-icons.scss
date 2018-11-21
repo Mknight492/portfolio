@@ -44,6 +44,12 @@
   @include primarySecondaryIconColors();
 }
 
+.coins{
+    @include fontAwesomeIcon('.fas', $fa-var-coins);
+    @include mediumSizeIcon();
+    @include primarySecondaryIconColors();
+}
+
 .laptop{
   @include fontAwesomeIcon('.fas', $fa-var-laptop-code);
   @include mediumSizeIcon();
